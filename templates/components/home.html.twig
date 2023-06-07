@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('styles.css') }}">
+       {% endblock %}
+
+        {% block javascripts %}
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}
+        <header>
+        <di>Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="produits/index.html.twig">Produits</a></li>
+                <li><a href="#">À Propos de Nous</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Se Connecter</a></li>
+                <li><a href="#">S'inscrire</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Nos Articles</h2>
+            <div class="articles">
+                <!-- Insérez ici vos articles de tissus -->
+                <article>
+                    <h3>Nappes</h3>
+                    <p>Belles nappes pour votre table</p>
+                </article>
+                <article>
+                    <h3>Serviettes</h3>
+                    <p>Jolie serviettes</p>
+                </article>
+                <article>
+                    <h3>Coussins</h3>
+                    <p>Sympathique coussins décoratifs</p>
+                </article>
+                <article>
+                    <h3>Revêtement</h3>
+                    <p>Pour protéger vos canapés et autres</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+        <p><a href="#">Contactez-nous</a></p>
+    </footer>
+        
+        {% endblock %}
+    </body>
+</html>
+
