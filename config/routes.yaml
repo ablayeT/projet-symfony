@@ -1,8 +1,8 @@
 controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
-produit:
-    path: /Produit.html.twig
-    controller: src\Controller\ProduitController::index
+  resource:
+    path: ../src/Controller/
+    namespace: App\Controller
+  type: attribute
+produits:
+  path: /produits
+  controller: src\Controller\ProduitsController::index
